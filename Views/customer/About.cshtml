@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/CustomerLayout.cshtml";
+}
+
+<div class="content">
+      <div class="container">
+        <div class="page-header">
+          <h1><font color="lightblue">Contact us</h1>
+        </div>
+        <div class="row-fluid">
+          <!-- Start: CONTACT US FORM -->
+          <div class="span4 offset1">
+            <div class="page-header">
+              <h2>Quick message</h2>
+            </div>
+            <form class="form-contact-us" action="/customer/feedBack" method="post">
+              <div class="control-group">
+                <div class="controls">
+                  <input type="text" id="inputName" placeholder="Name" required="required">
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="controls">
+                  <input type="text" id="inputEmail" placeholder="Email" required>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="controls">
+                  <textarea id="inputMessage" placeholder="Message" required="required"></textarea>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="controls">
+                  <input type="submit" class="btn btn-primary btn-large" value="Send">
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- End: CONTACT US FORM -->
+          <!-- Start: OFFICES -->
+          <div class="span5 offset1">
+            <div class="page-header">
+              <h2>Our Offices</h2>
+            </div>
+            <h3>The Mall,Lahore</h3>
+            <div>
+              <address class="pull-left">
+                <strong>YouSolution</strong><br>
+                121 H karim Bakhsh, Near Punjab Assembly Lahore<br>
+                Pakistan<br>
+              </address>
+              <div class="pull-right">
+                <div class="bottom-space">
+                  <i class="icon-phone icon-large"></i> (041) 123-4567
+                </div>
+                <a href="mailto:admin@onlineshopping.com" class="contact-mail">
+                  <i class="icon-envelope icon-large"></i>
+                </a> ecard@onlineshopping.com
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <h3>Kasur</h3>
+            <div>
+              <address class="pull-left">
+                <strong>Barket Shopping store</strong><br>
+                 Main Market, Naya Bazar Kasur
+                Pakistan<br>
+              </address>
+              <div class="pull-right">
+                <div class="bottom-space">
+                  <i class="icon-phone icon-large"></i> (049) 223-1234
+                </div>
+                <a href="mailto:hr@onlineshopping.com" class="contact-mail">
+                  <i class="icon-envelope icon-large"></i>
+                </a> hr@onlineshopping.com
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <h3> Pattoki</h3>
+            <div>
+              <address class="pull-left">
+                <strong>Al-Noor center.</strong><br>
+                Circular Road, 7.Km From pattoki<br>
+                Pakistan<br>
+              </address>
+              <div class="pull-right">
+                <div class="bottom-space">
+                  <i class="icon-phone icon-large"></i> 050-7808343
+                </div>
+                <a href="mailto:contact@onlineshopping.com" class="contact-mail">
+                  <i class="icon-envelope icon-large"></i>
+                </a> contact@onlineshopping.com
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <!-- End: OFFICES -->
+        </div>
+      </div>
+    </div>

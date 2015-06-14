@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "AllProduct";
+}
+
+@{
+    Layout = "~/Views/Shared/CustomerLayout.cshtml";
+}
+@model List<Project_1.Models.Product>
+
+<!-- Start: PRODUCT LIST -->
+        <div class="container">
+          <div class="page-header">
+            <h2><font color="blue" >Our products</font></h2>
+          </div>
+          <div class="row-fluid">
+            <ul class="thumbnails">
+                @foreach(var a in Model)
+                {
+              <li class="span3">
+                <div class="thumbnail">
+                  <img src="~/Image/@a.ProductImage" style="width:260px;height:150px">
+                  <div class="caption">
+                    <h3>@a.ProductName</h3>
+                    <p>
+                   <div >Catagory    @a.ProductCatagery</div>
+                        
+                   <div> Price       @a.ProductPrice</div>
+                    </p>
+                  </div>
+                  <div class="widget-footer">
+                    <p>
+                      <a href="/customer/addToCart?pname=@a.ProductName" class="btn btn-primary">Add To Cart</a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+                }
+             
+
+
+                </ul>
+          </div>
+        </div>
+      <!-- End: PRODUCT LIST -->
+   
+    <!-- End: MAIN CONTENT -->
